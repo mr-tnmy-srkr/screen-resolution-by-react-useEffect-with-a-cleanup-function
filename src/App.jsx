@@ -1,13 +1,12 @@
-import { useState } from 'react'
+
 import './App.css'
-import Cleanupfunc from './Useeffectcleanupfunc'
+import Useeffectcleanupfunc from './Useeffectcleanupfunc'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Cleanupfunc></Cleanupfunc>
+     <Useeffectcleanupfunc></Useeffectcleanupfunc>
     </>
   )
 }

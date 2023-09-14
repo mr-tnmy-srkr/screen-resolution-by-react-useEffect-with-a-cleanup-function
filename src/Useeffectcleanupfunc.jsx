@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import './index.css'
 
-const Cleanupfunc = () => {
+const Useeffectcleanupfunc = () => {
   const [widthCount, setWidthCount] = useState(window.screen.width);
   const [heightCount, setHeightCount] = useState(window.screen.height);
 
@@ -32,10 +33,11 @@ const Cleanupfunc = () => {
   return (
     <div>
       <h1>Actual Size of your Screen is : {widthCount} * {heightCount}</h1>
+      <br />
       <h1>Width : {widthCount} px</h1>
       <h1>Height : {heightCount} px</h1>
     </div>
   );
 };
 
-export default Cleanupfunc;
+export default Useeffectcleanupfunc;

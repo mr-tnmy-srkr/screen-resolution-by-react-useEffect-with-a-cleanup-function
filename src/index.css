@@ -6,12 +6,13 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #242424; */
-  background:url('https://i.ibb.co/JB1y0X5/4690.jpg') ,
-  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  background: url("https://i.ibb.co/JB1y0X5/4690.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;  
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,7 +39,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   line-height: 1.1;
 }
 
@@ -63,13 +64,10 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    background-size: cover;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
   }
 }
